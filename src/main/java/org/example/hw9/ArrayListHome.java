@@ -1,4 +1,4 @@
-package org.example.HW9;
+package org.example.hw9;
 
 public class ArrayListHome {
     private Object[] data;
@@ -21,7 +21,7 @@ public class ArrayListHome {
     }
 
     public Object get(int index) {
-        if (index < 0 || index > size) {
+        if (index < 0 || index >= size) {
             throw new ArrayIndexOutOfBoundsException();
 
         }
@@ -29,7 +29,7 @@ public class ArrayListHome {
 
     }
     public void remove(int index){
-        if (index<0 || index >size){
+        if (index<0 || index>=size){
             throw new ArrayIndexOutOfBoundsException();
         }
         for (int i = index; i< size -1 ; i ++){
