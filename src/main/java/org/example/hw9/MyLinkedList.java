@@ -50,6 +50,7 @@ public class MyLinkedList <T>{
 
     }
     public int size() {
+
         return size;
     }
     public T get(int index ){
