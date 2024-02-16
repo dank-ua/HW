@@ -68,7 +68,6 @@ public class MyHashMap <K, V> {
         return  null;
         }
 
-
     private  int gIndex(K key){
         return Math.abs(key.hashCode()% entries.length);
     }
