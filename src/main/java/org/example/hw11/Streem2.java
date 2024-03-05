@@ -6,11 +6,12 @@ import java.util.stream.Stream;
 
 public class Streem2 {
     public static void main(String[] args) {
-        Stream<String> names = List.of("Vasia", "Petia", "Jora", "Luda", "Katia", "Paraska")
+        String names = List.of("Vasia", "Petia", "Jora", "Luda", "Katia", "Paraska")
                 .stream()
                 .map(i -> i.toUpperCase())
-                .sorted();
-        List<String> result = names.collect(Collectors.toList());
-        System.out.println(  result);
+                .sorted()
+                .collect(Collectors.joining(", "));
+       //   List<String> result = names.collect(Collectors.toList());
+        System.out.println(  names);
     }
 }
